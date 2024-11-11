@@ -116,10 +116,10 @@ export default function Homepage() {
                 <button className="border-solid border-2 border-green-400 px-4">A1</button>
             </div>
         </div> */}
-        <div className='p-4 ghe__dang__dat fixed z-50 bottom-0 w-max bg-red-400 flex rounded-md'>
+        <div className='p-4 left-0 right-0 z-50 bottom-0 bg-red-400 flex rounded-md'>
             <h2 className='font-medium bg-inherit'>Ghế đang được đặt:</h2>
             {props.listSeatSelected.map((seat)=>
-                <h3 className='font-medium bg-inherit text-white mx-2'>
+                <h3 key={seat.soGhe} className='font-medium bg-inherit text-white mx-2'>
                     {seat.soGhe} - {seat.gia}
                 </h3>     
             )}
